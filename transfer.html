@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/js/main.js">
+
+
+    <title>Transfer</title>
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <div>
+
+            <div class="left_menu">
+                <div>
+                    <h3>Bank App</h3>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-exchange"></i>
+                            <a href="transfer.html">Transfer</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-briefcase"></i>
+                            <a href="history.html">History</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-user-o"></i>
+                            <a href="profile.html">profile</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-cog"></i>
+                            <a href="setting.html">Setting</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-power-off"></i>
+                            <a href="">Logout</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="top_menu">
+                    <div>
+                        <h3>Dashboard</h3>
+                    </div>
+                    <div class="top_menu_2">
+                        <a href="history">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                        <a href="profile">
+                            <img src="static/medias/logo.jpg">
+                        </a>
+                        <a href="">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                        <i class="fa fa-bars" id="bar"></i>
+                    </div>
+                </div>
+
+                <div class="body">
+                    <div>
+                        <div class="balance">
+                            <div>
+                                <i class="fa fa-dollar"></i>
+                                <h4>balance</h4>
+                                <p>10000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="box_card">
+                            <div class="transfer">
+                                <form action="transfer_final.html">
+                                    <div class="form">
+                                        <label for="">Account Number</label>
+                                        <br>
+                                        <input type="number" placeholder="Enter Account Number" name="account_number">
+                                    </div>
+                                    <div class="form">
+                                        <label for="">Amount</label>
+                                        <br>
+                                        <input type="number" placeholder="Enter Amount" name="amount">
+                                    </div>
+                                    <div class="form">
+                                        <label for="">Discription</label>
+                                        <br>
+                                        <input type="text" placeholder="Enter Discription" name="discription">
+                                    </div>
+                                    <div class="form">
+                                        <button>Procced</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="static/js/main.js"></script>
+    
+</body>
+</html>

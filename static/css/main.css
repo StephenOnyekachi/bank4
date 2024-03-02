@@ -1,0 +1,419 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --main_color: rgb(240, 240, 240);
+    --text_color: rgb(105, 105, 105);
+    --bg_color: white;
+    --hover_color: rgb(14, 13, 13);
+    --notice_bg: rgb(24, 122, 250);
+    --notice_color: rgb(195, 255, 232);
+    --danger: rgb(255, 99, 99);
+}
+
+
+/* =================================== */
+/* ======== for left_menu menu ======= */
+/* =================================== */
+
+.left_menu{
+    position: fixed;
+    width: 17%;
+    height: 100vh;
+    left: 0px;
+    padding: 10px;
+    border-right: 1px solid var(--text_color);
+    background-color: var(--bg_color);
+}
+.left_menu h3{
+    text-align: center;
+    color: var(--hover_color);
+    padding: 10px;
+    border-bottom: 1px solid var(--text_color);
+}
+.left_menu ul{
+    padding: 10px;
+}
+.left_menu ul li{
+    padding: 10px;
+    text-decoration: none;
+    display: flex; 
+}
+.left_menu ul li a{
+    margin-left: 10px;
+    color: var(--text_color);
+    text-transform: capitalize;
+}
+.left_menu ul li a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--hover_color);
+}
+
+
+/* =================================== */
+/* ====== end of left_menu menu ====== */
+/* =================================== */
+
+
+.box{
+    padding: 10px;
+    margin-left: 18%;
+    width: 80%;
+}
+.top_menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid var(--text_color);
+    background-color: var(--bg_color);
+    position: fixed;
+    width: 80%;
+    top: 0;
+    z-index: 100;
+    /* left: 0; */
+}
+.body{
+    margin-top: 80px;
+}
+#bar{
+    display: none;
+}
+.top_menu_2 a{
+    color: var(--text_color);
+    margin-right: 15px;
+}
+.top_menu_2 a:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+.top_menu_2 a img{
+    width: 30px;
+    border-radius: 50%;
+}
+.top_menu_2 i{
+    font-size: 3rem;
+}
+.top_menu_2{
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.balance{
+    background-color: var(--notice_bg);
+    color: var(--notice_color);
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+}
+.balance i{
+    color: var(--notice_color);
+    font-weight: bold;
+    position: absolute;
+    right: 70px;
+    font-size: 100px;
+    opacity: 0.4;
+}
+.balance h4{
+    color: var(--notice_color);
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+.balance p{
+    color: var(--notice_color);
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.box_card{
+    display: flex;
+    width: 100%;
+}
+.box_card .boxs{
+    background-color: var(--notice_bg);
+    color: var(--notice_color);
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+}
+.box_card .boxs a:hover{
+    text-decoration: none;
+}
+.box_card .boxs i{
+    color: var(--notice_color);
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    margin-top: 0px;
+    font-size: 100px;
+    opacity: 0.4;
+}
+.box_card .boxs h4{
+    color: var(--notice_color);
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+.box_card .boxs p{
+    color: var(--notice_color);
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.box_card .transfer{
+    background-color: var(--notice_bg);
+    color: var(--notice_color);
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.box_card .transfer p{
+    margin-left: 20px;
+}
+.box_card .transfer h4{
+    margin-left: 20px;
+}
+
+.form{
+    padding: 10px;
+}
+.form input{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.form button{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: var(--bg_color);
+    background-color: var(--text_color);
+    border-radius: 10px;
+}
+
+/* ============= ============= ============= ======== */
+/* =====for transfer, setting and profile =========== */
+/* ========================================= ======== */
+
+
+/* ============= ============= ============= ======== */
+/* ======= ======== for pay bills ======= =========== */
+/* ========================================= ======== */
+
+.pay{
+    background-color: var(--notice_bg);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.pay a{
+    text-decoration: none;
+}
+.pay a h4{
+    color: white;
+}
+
+/* ============= ============= ============= ======== */
+/* ===== ========= end pay bills ======== =========== */
+/* ========================================= ======== */
+
+.trasfer{
+    padding: 10px;
+}
+.trasfer .trasfer_boxs{
+    background-color: var(--main_color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+.trasfer small{
+    color: var(--notice_bg);
+    margin: 0px 20px;
+    font-size: small;
+    font-weight: lighter;
+}
+.trasfer h3{
+    color: var(--notice_bg);
+    margin: 0px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.trasfer_boxs img{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.trasfer_boxs a:hover{
+    text-decoration: none;
+}
+
+/* ============= ============= ============= ======== */
+/* ============ ============ the end ==== =========== */
+/* ========================================= ======== */
+
+
+/* ============= ============= ============= ======== */
+/* ======= ==== for alerts, settings ==== =========== */
+/* ========================================= ======== */
+
+.cover{
+    background-color: rgba(19, 19, 19, 0.897);
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    /* opacity: 0.9; */
+    height: 100vh;
+    z-index: 100;
+}
+.cover_box{
+    background-color: var(--bg_color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 100px 320px;
+    height: 300px;
+}
+.cover_box form input{
+    padding: 5px;
+    margin: 10px 0px;
+    outline: none;
+    width: 100%;
+    border: 1px solid var(--main_color);
+    border-radius: 10px;
+}
+.cover_box form button{
+    padding: 5px;
+    margin: 10px 0px;
+    outline: none;
+    border: none;
+    background-color: var(--notice_bg);
+    width: 100%;
+    border-radius: 10px;
+    color: var(--notice_color);
+}
+.cover_box a{
+    padding: 5px;
+    margin: 10px 0px;
+    background-color: var(--danger);
+    width: 100%;
+    border-radius: 10px;
+    color: var(--notice_color);
+}
+.cover_box a{
+    text-decoration: none;
+}
+.success{
+    text-align: center;
+    margin-top: 50px;
+}
+.success i{
+    color: var(--notice_color);
+    font-size: 10rem;
+}
+.success a{
+    padding: 5px 10px;
+    margin: 10px 0px;
+    background-color: var(--notice_color);
+    width: 100%;
+    border-radius: 10px;
+    color: var(--text_color);
+}
+
+/* ============= ============= ============= ======== */
+/* ============ ============ the end ==== =========== */
+/* ========================================= ======== */
+
+@media(max-width: 900px){
+    .header-social_icon{
+        display: none;
+    }
+    #bar{
+        display: block;
+    }
+    .cover_box{
+        background-color: var(--bg_color);
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        margin: 100px 0px;
+        height: 300px;
+    }
+
+    /* =================================== */
+    /* ======== for left_menu menu ======= */
+    /* =================================== */
+
+    .left_menu{
+        opacity: 0;
+    }
+    .left_menu.action{
+
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        left: 0px;
+        padding: 10px;
+        border-right: 1px solid var(--text_color);
+        background-color: var(--bg_color);
+        z-index: 90;
+
+        opacity: 1;
+    }
+
+
+    .box{
+        padding: 10px;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .top_menu_2{
+        display: flex;
+        color: var(--text_color);
+        margin-right: 15px;
+    }
+    .top_menu_2 a i{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 760px){
+    .carousel-inner .carousel-caption h2{
+        font-size: 38px;
+    }
+}
+
+@media(max-width: 577px){
+    .carousel-inner .carousel-caption p{
+        font-size: 25px;
+    }
+}
